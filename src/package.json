@@ -3,21 +3,21 @@
   "author": "Warriors Life",
   "version": "0.0.1",
   "description": "Simple ArrayBuffer memory allocator",
-
   "license": "SEE LICENSE IN ../LICENSE",
   "private": true,
-
   "type": "module",
   "exports": "./index.js",
   "engines": {
     "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/warriors-life/memory-allocator.git",
     "directory": "src"
   },
   "homepage": "https://github.com/warriors-life/memory-allocator",
-  "bugs": "https://github.com/warriors-life/memory-allocator/issues"
+  "bugs": "https://github.com/warriors-life/memory-allocator/issues",
+  "dependencies": {
+    "events": "^3.3.0"
+  }
 }
