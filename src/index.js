@@ -1,2 +1,6 @@
-export { default as MemoryAllocator } from './MemoryAllocator.js';
+import MemoryAllocator from './MemoryAllocator';
+
+export default MemoryAllocator;
+export MemoryAllocator;
+
 export { default as MemoryRef } from './MemoryRef.js';

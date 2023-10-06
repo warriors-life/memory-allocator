@@ -4,16 +4,16 @@ export default class MemoryRef extends EventEmitter {
 	#range;
 
 	constructor(range) {
-		this.set(range);
+		this._set(range);
 	}
 
-	set(range) {
+	_set(range) {
 		this.#range = range;
 	}
 
 	async free() {
-		this.emit('free');
 		this.#range = null;
+		this.emit('free');
 	}
 
 	toDataView() {

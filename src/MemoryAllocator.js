@@ -6,8 +6,8 @@ export default class MemoryAllocator {
 	#ranges = new Set();
 	#bufferSize;
 
-	constructor(size = 1024 ** 2) {
-		this.bufferSize = size;
+	constructor(bufferSize = 1024 ** 2) {
+		this.#bufferSize = bufferSize;
 	}
 
 	addBuffer(size = 0) {
