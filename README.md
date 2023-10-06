@@ -1,6 +1,8 @@
 # memory-allocator
 A simple ArrayBuffer memory allocator for JS.
 
+Not to be confused with the [`memory-pool`](https://www.npmjs.com/package/memory-pool) package, which removes the overhead of object creation by maintaining a pool of them and modifying their properties.
+
 ## License
 See the [LICENSE](LICENSE) file.
 
