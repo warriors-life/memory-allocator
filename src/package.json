@@ -1,0 +1,23 @@
+{
+  "name": "warriors-life-template-js",
+  "author": "Warriors Life",
+  "version": "0.0.1",
+  "description": "Template of Warriors Life JS packages",
+
+  "license": "SEE LICENSE IN ../LICENSE",
+  "private": true,
+
+  "type": "module",
+  "exports": "./index.js",
+  "engines": {
+    "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warriors-life/.warriors-life-template-js.git",
+    "directory": "src"
+  },
+  "homepage": "https://github.com/warriors-life/.warriors-life-template-js",
+  "bugs": "https://github.com/warriors-life/.warriors-life-template-js/issues"
+}

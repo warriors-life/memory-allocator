@@ -1,0 +1,23 @@
+# Taken from https://github.com/alexkaratarakis/gitattributes
+# Use `echo "$(git ls-files | git check-attr -a --stdin | grep "text: auto")"` to check if all files are covered
+# Update this file when files with new extensions are added
+
+*               text=auto
+
+.gitattributes  text
+.gitignore      text
+.gitkeep        text
+
+LICENSE         text
+
+*.md            text diff=markdown
+
+*.yml           text
+
+*.js            text
+
+*.json          text
+
+.gitattributes  export-ignore
+.gitignore      export-ignore
+.gitkeep        export-ignore

@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    branches-ignore:
+      - 'dependabot/**'
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - 'release/?*'
+      - 'dev'
+  schedule:
+    - cron: '30 1 * * 6' # Weekly on Saturdays
+
+permissions: {}
+
+jobs:
+  call-workflow:
+    if: "!contains(github.repository, '.warriors-life-template')"
+    uses: warriors-life/.warriors-life-workflows/.github/workflows/build-js.yml@dev
+    secrets: inherit
+    permissions:
+      security-events: write
+      packages: write
+      contents: write
+      actions: read
+      issues: read
+      pull-requests: read
