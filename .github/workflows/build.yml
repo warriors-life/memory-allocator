@@ -26,5 +26,3 @@ jobs:
       actions: read
       issues: read
       pull-requests: read
-    with:
-      node-code-pre-test: DISABLE

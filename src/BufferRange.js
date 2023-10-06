@@ -14,7 +14,7 @@ export default class BufferRange {
 	}
 
 	get buffer() {
-		this.#buffer;
+		return this.#buffer;
 	}
 
 	get start() {

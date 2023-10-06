@@ -12,7 +12,7 @@ export default class MemoryAllocator {
 
 	addBuffer(size = 0) {
 		const buffer = new ArrayBuffer(Math.max(this.#bufferSize, size));
-		const range = new BufferRange(buffer, 0, buffer.length);
+		const range = new BufferRange(buffer, 0, buffer.byteLength);
 		this.#ranges.add(range);
 		return range;
 	}

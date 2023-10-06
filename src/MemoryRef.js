@@ -4,6 +4,7 @@ export default class MemoryRef extends EventEmitter {
 	#range;
 
 	constructor(range) {
+		super();
 		this._set(range);
 	}
 
@@ -12,15 +13,16 @@ export default class MemoryRef extends EventEmitter {
 	}
 
 	async free() {
+		const range = this.#range;
 		this.#range = null;
-		this.emit('free');
+		this.emit('free', range);
 	}
 
 	toDataView() {
-		return this.toTypedArray(DataView);
+		return new DataView(this.#range.buffer, this.#range.start, this.#range.length);
 	}
 
-	toTypedArray(cls = Uint8Array) {
-		return new cls(this.#range.buffer, this.#range.start, this.#range.length);
+	toTypedArray(Class = Uint8Array) {
+		return new Class(this.#range.buffer, this.#range.start, this.#range.length / Class.BYTES_PER_ELEMENT);
 	}
 }

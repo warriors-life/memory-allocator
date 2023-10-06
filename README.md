@@ -10,7 +10,7 @@ See the [LICENSE](LICENSE) file.
 Feel free to [open an issue](https://github.com/warriors-life/memory-allocator/issues/new) or [make a pull request](https://github.com/warriors-life/memory-allocator/pulls)! You can find contributing guidelines [here](CONTIBUTING.md) and as a start you can work on any issue labelled ["good first issue"](https://github.com/warriors-life/memory-allocator/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 
 # Documentation
-The package exports `MemoryAllocator` (including as default) and `MemoryRef` classes.
+The package exports `MemoryAllocator` class as default.
 
 ## class MemoryAllocator
 The main class.
