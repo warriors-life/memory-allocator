@@ -1,5 +1,5 @@
 # Contribution
-Thank you for deciding to contribute a feature or bug fix to ProjectName! Please read the following to get started.
+Thank you for deciding to contribute a feature or bug fix to memory-allocator! Please read the following to get started.
 
 ## Installation
 ```sh

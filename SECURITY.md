@@ -5,7 +5,7 @@ If you have discovered a security vulnerability in this project, please report i
 You may submit the report in the following ways:
 
 - send an email to info@warriorslife.site; and/or
-- send us a [private vulnerability report](https://github.com/warriors-life/.warriors-life-template-js/security/advisories/new)
+- send us a [private vulnerability report](https://github.com/warriors-life/memory-allocator/security/advisories/new)
 
 Please provide the following information in your report:
 

@@ -13,7 +13,7 @@
   "license": "SEE LICENSE IN ../LICENSE",
   "private": "true",
   "dependencies": {
-    "warriors-life-template-js": "file:../src"
+    "@warriors-life/memory-allocator": "file:../src"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

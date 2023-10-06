@@ -17,7 +17,6 @@ permissions: {}
 
 jobs:
   call-workflow:
-    if: "!contains(github.repository, '.warriors-life-template')"
     uses: warriors-life/.warriors-life-workflows/.github/workflows/build-js.yml@dev
     secrets: inherit
     permissions:
@@ -27,3 +26,5 @@ jobs:
       actions: read
       issues: read
       pull-requests: read
+    with:
+      node-code-pre-test: DISABLE
