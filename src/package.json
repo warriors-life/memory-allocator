@@ -3,7 +3,7 @@
   "author": "Warriors Life",
   "version": "0.0.2",
   "description": "Simple ArrayBuffer memory allocator",
-  "license": "SEE LICENSE IN ../LICENSE",
+  "license": "MIT",
   "type": "module",
   "exports": "./index.js",
   "engines": {
