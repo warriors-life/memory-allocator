@@ -1,9 +1,21 @@
-© 2023 Warriors Life
+MIT License
 
-The Warriors Life is close-sourced.
+Copyright (c) 2023 Warriors Life
 
-Below, the term "the Repository" means "the repository where this license is located", the term "the Code" means "code, parts of code, and anything discovered by looking on the code of the Warriors Life and/or located in the Repository", and the term "the Maintainers" means "Levi Pesin and the current maintainers of the Repository and the Warriors Life itself".
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-No part of the Code can be provided to a person or group not being a part of the Maintainers without the explicit permission obtained from Levi Pesin for the part to be disclosed to the person or group. By becoming one of the Maintainers, contributing to the Repository, or obtaining access to any part of the Warriors Life, the Code, or the Repository, you agree to these rules.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-IF YOU DO NOT AGREE WITH SOME OR ALL OF THESE RULES, YOU ARE PROHIBITED FROM DOING ANY ACTIONS WITH THE CODE, THE REPOSITORY, OR THE WARRIORS LIFE ITSELF, INCLUDING BUT NOT LIMITED TO USING, READING, COPYING, MODIFYING, PUBLISHING, DISTRIBUTING, RE-LICENSING, SUBLICENSING, OR SELLING ANY PARTS OF THE WARRIORS LIFE, THE REPOSITORY, OR THE CODE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

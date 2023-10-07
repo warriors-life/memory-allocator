@@ -1,4 +1,4 @@
-import MemoryAllocator from '@warriors-life/memory-allocator';
+import MemoryAllocator from 'memory-allocator';
 
 function formatRanges(ranges) {
 	return ranges.map(([start, end]) => `[${start}, ${end})`).join(', ');
