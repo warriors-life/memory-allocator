@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2023-10-07
+
+### Added
+- Test that smallest sufficient range is always selected ([`5491c11`](https://github.com/warriors-life/memory-allocator/commit/5d91c116b6a4463d0799d015400aa9314ca2d020)).
+
+### Changed
+- Made public ([`2e77fda`](https://github.com/warriors-life/memory-allocator/commit/2e77fda896af6dd642329aaaf711abe92303bbfb)).
+
 ## [0.0.1] - 2023-10-07
 
 ### Added
@@ -14,5 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added documentation ([`278e027`](https://github.com/warriors-life/memory-allocator/commit/278e027886cfeb9804ec12751849ffdd115384b8)).
 - Added unit tests ([`5cbbeff`](https://github.com/warriors-life/memory-allocator/commit/5cbbeff7e50160c3e40b2de61d9f38c3441a5695)).
 
-[Unreleased]: https://github.com/warriors-life/memory-allocator/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com/warriors-life/memory-allocator/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/warriors-life/memory-allocator/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/warriors-life/memory-allocator/releases/tag/v0.0.1
