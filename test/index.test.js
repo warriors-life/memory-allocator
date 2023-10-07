@@ -14,9 +14,11 @@ expect.extend({
 			const ref = allocator.allocate(end - start);
 			refs.push(ref);
 			const { byteOffset, byteLength } = ref.toDataView();
-			pass = byteOffset === start && byteLength === end - start;
 			ranges.push([byteOffset, byteOffset + byteLength]);
-			if (!pass) break;
+			if (byteOffset !== start || byteLength !== end - start) {
+				pass = false;
+				break;
+			}
 		}
 
 		await Promise.all(refs.map(ref => ref.free()));
