@@ -112,6 +112,28 @@ test('Even with multiple buffers memory is proper compacted', async () => {
 	await expect(allocator).toHaveRanges([0, 16], [0, 16]);
 });
 
+test('Smallest sufficient range is always selected', async () => {
+	const ref1 = allocator.allocate(3);
+	const ref2 = allocator.allocate(5);
+	const ref3 = allocator.allocate(4);
+	const ref4 = allocator.allocate(10);
+	const ref5 = allocator.allocate(5);
+	const ref6 = allocator.allocate(2);
+	await ref4.free();
+	await ref2.free();
+	await ref3.free();
+	await expect(allocator).toHaveRanges([3, 12], [14, 16], [0, 10], [15, 16]);
+	const ref7 = allocator.allocate(1);
+	await expect(allocator).toHaveRanges([3, 12], [14, 16], [0, 10]);
+	const ref8 = allocator.allocate(4);
+	await expect(allocator).toHaveRanges([7, 12], [14, 16], [0, 10]);
+	await ref1.free();
+	await ref5.free();
+	await ref6.free();
+	await ref7.free();
+	await ref8.free();
+});
+
 test('MemoryAllocator.addBuffer() works', async () => {
 	allocator.addBuffer(50);
 	const ref = allocator.allocate(3);
