@@ -14,7 +14,7 @@ expect.extend({
 			const ref = allocator.allocate(end - start);
 			refs.push(ref);
 			const { byteOffset, byteLength } = ref.toDataView();
-			pass = pass && byteOffset === start && byteLength === end - start;
+			pass = byteOffset === start && byteLength === end - start;
 			ranges.push([byteOffset, byteOffset + byteLength]);
 			if (!pass) break;
 		}
