@@ -1,7 +1,7 @@
 {
   "name": "memory-allocator",
   "author": "Warriors Life",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Simple ArrayBuffer memory allocator",
   "license": "MIT",
   "type": "module",
