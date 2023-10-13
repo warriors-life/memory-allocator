@@ -1,4 +1,4 @@
-import MemoryAllocator from 'memory-allocator';
+import MemoryAllocator, { MemoryRef } from 'memory-allocator';
 
 function formatRanges(ranges) {
 	return ranges.map(([start, end]) => `[${start}, ${end})`).join(', ');
@@ -36,6 +36,7 @@ beforeEach(() => allocator = new MemoryAllocator(16));
 
 test('Memory allocation works', async () => {
 	const ref = allocator.allocate(2);
+	expect(ref).toBeInstanceOf(MemoryRef);
 	const dv = ref.toDataView();
 	expect(dv.byteOffset).toBe(0);
 	expect(dv.byteLength).toBe(2);
