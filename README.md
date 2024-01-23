@@ -1,5 +1,5 @@
 # memory-allocator
-A simple ArrayBuffer memory allocator for JS.
+A simple ArrayBuffer memory allocator for JS. It can be found on NPM as [`memory-allocator`](https://www.npmjs.com/package/memory-allocator) or [`@warriors-life/memory-allocator`](https://www.npmjs.com/package/@warriors-life/memory-allocator), or on [GitHub Packages](https://github.com/warriors-life/memory-allocator/pkgs/npm/memory-allocator) as latter.
 
 Not to be confused with the [`memory-pool`](https://www.npmjs.com/package/memory-pool) package, which removes the overhead of object creation by maintaining a pool of them and modifying their properties (see also [`PrimitivePool`](https://github.com/gkjohnson/three-mesh-bvh/blob/master/src/utils/PrimitivePool.js)).
 
