@@ -19,7 +19,7 @@ The main class.
 `bufferSize` parameters controls minimal size of the new array buffers created by MemoryAllocator when it is impossible to allocate data in old buffers.
 
 ### .addBuffer(size?: number >= bufferSize): ignore
-Manually create a buffer of the specified size.
+Manually add a buffer of the specified size.
 
 ### .allocate(size): MemoryRef
 Allocate a slice of memory of the specified size. The resulting memory ref is returned.
