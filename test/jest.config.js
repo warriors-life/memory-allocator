@@ -1,14 +1,18 @@
 export default {
+	rootDir: "..",
+
+	transform: {},
+
 	clearMocks: true,
 
 	collectCoverage: true,
-	collectCoverageFrom: ["../src/**"],
-	coverageDirectory: "coverage",
+	collectCoverageFrom: ["<rootDir>/src/**/*.js"],
+	coverageDirectory: "<rootDir>/test/coverage",
 	coverageProvider: "babel",
 
 	errorOnDeprecated: true,
 
-	testMatch: ["**/*.test.js"],
+	testMatch: ["<rootDir>/**/*.test.js"],
 
 	reporters: [['github-actions', { silent: false }], 'summary']
 };
