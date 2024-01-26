@@ -25,5 +25,6 @@ jobs:
       packages: write
       contents: write
       pull-requests: write
+      checks: write
       actions: read
       issues: read
