@@ -14,5 +14,5 @@ export default {
 
 	testMatch: ["<rootDir>/**/*.test.js"],
 
-	reporters: [['github-actions', { silent: false }], 'summary']
+	reporters: process.env.CI === 'true' ? [['github-actions', { silent: false }], 'summary'] : ['default']
 };
