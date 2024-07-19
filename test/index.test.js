@@ -24,7 +24,7 @@ expect.extend({
 		await Promise.all(refs.map(ref => ref.free()));
 
 		return {
-			message: () => `expected allocator's first available ranges${pass ? ' not' : ''} to be ${formatRanges(list)}${pass ? '' : ', received ' + formatRanges(ranges)}`,
+			message: () => `expected allocator's first available ranges${pass ? ' not' : ''} to be ${this.utils.printExpected(formatRanges(list))}${pass ? '' : ', received ' + this.utils.printReceived(formatRanges(ranges))}`,
 			pass
 		};
 	}
