@@ -27,7 +27,7 @@ Allocate a slice of memory of the specified size. The resulting memory ref is re
 ## class MemoryRef
 Reference to a slice of memory. Note that underlying slice may be relocated during a manual defragmentation.
 
-### async .free(): void
+### .free(): void
 Mark the reference as freed. It can no longer be used after that and the underlying memory may be redistributed.
 
 ### .toDataView(): DataView

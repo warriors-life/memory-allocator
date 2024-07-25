@@ -34,7 +34,7 @@ export default class MemoryAllocator {
 		return ref;
 	}
 
-	#free(ref, range) {
+	async #free(ref, range) {
 		// this.#memoryRefs.delete(ref);
 
 		if (this.#ranges.has(range.left)) {

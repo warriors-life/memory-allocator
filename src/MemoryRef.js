@@ -12,7 +12,7 @@ export default class MemoryRef extends EventEmitter {
 		this.#range = range;
 	}
 
-	async free() {
+	free() {
 		const range = this.#range;
 		this.#range = null;
 		this.emit('free', range);
