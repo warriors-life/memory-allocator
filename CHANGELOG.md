@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Make `MemoryRef.free()` synchronous (...).
 
+### Performance
+- Make ranges list use AVL trees internally (...).
+
 ## [0.1.0] - 2023-10-13
 
 ### Added

@@ -17,6 +17,7 @@
   "homepage": "https://github.com/warriors-life/memory-allocator",
   "bugs": "https://github.com/warriors-life/memory-allocator/issues",
   "dependencies": {
+    "@foxglove/avl": "^1.0.0",
     "events": "^3.3.0"
   }
 }

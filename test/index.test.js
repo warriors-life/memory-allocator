@@ -25,6 +25,8 @@ expect.extend({
 
 		refs.forEach(ref => ref.free());
 
+		await new Promise(resolve => setTimeout(resolve, 30)); // wait until ranges have compacted
+
 		return {
 			message: () => `expected allocator's first available ranges${pass ? ' not' : ''} to be ${this.utils.printExpected(formatRanges(list))}${pass ? '' : ', received ' + this.utils.printReceived(formatRanges(ranges))}`,
 			pass
