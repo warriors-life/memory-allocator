@@ -6,11 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2024-07-25
+
 ### Changed
-- Make `MemoryRef.free()` synchronous (...).
+- Make `MemoryRef.free()` synchronous ([`a2bb086`](https://github.com/warriors-life/memory-allocator/commit/a2bb086eec5b9fd3f8d6cef77fea4f5d5bc19f2b)).
 
 ### Performance
-- Make ranges list use AVL trees internally (...).
+- Make ranges list use AVL trees internally ([`464e8d2`](https://github.com/warriors-life/memory-allocator/commit/464e8d20e0dbd69347d714bb5914f348a1e010ed)).
 
 ## [0.1.0] - 2023-10-13
 
@@ -38,7 +40,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added documentation ([`278e027`](https://github.com/warriors-life/memory-allocator/commit/278e027886cfeb9804ec12751849ffdd115384b8)).
 - Added unit tests ([`5cbbeff`](https://github.com/warriors-life/memory-allocator/commit/5cbbeff7e50160c3e40b2de61d9f38c3441a5695)).
 
-[Unreleased]: https://github.com/warriors-life/memory-allocator/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/warriors-life/memory-allocator/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/warriors-life/memory-allocator/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/warriors-life/memory-allocator/compare/v0.0.3...v0.1.0
 [0.0.3]: https://github.com/warriors-life/memory-allocator/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/warriors-life/memory-allocator/compare/v0.0.1...v0.0.2
