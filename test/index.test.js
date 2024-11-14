@@ -53,6 +53,13 @@ test('Memory is proper splitted', async () => {
 	ref.free();
 });
 
+test('Allocator can be created with default buffer size', () => {
+	allocator = new MemoryAllocator();
+	const ref = allocator.allocate(2);
+	await expect(allocator).toHaveRanges([2, 1024 ** 2]);
+	ref.free();
+});
+
 test('Multiple allocations work', async () => {
 	const ref1 = allocator.allocate(2);
 	const ref2 = allocator.allocate(5);
@@ -145,6 +152,13 @@ test('MemoryAllocator.addBuffer() works', async () => {
 	allocator.addBuffer(50);
 	const ref = allocator.allocate(3);
 	await expect(allocator).toHaveRanges([3, 50]);
+	ref.free();
+});
+
+test('MemoryAllocator.addBuffer() with default size works', async () => {
+	allocator.addBuffer();
+	const ref = allocator.allocate(3);
+	await expect(allocator).toHaveRanges([3, 16]);
 	ref.free();
 });
 
