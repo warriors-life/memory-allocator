@@ -53,7 +53,7 @@ test('Memory is proper splitted', async () => {
 	ref.free();
 });
 
-test('Allocator can be created with default buffer size', () => {
+test('Allocator can be created with default buffer size', async () => {
 	allocator = new MemoryAllocator();
 	const ref = allocator.allocate(2);
 	await expect(allocator).toHaveRanges([2, 1024 ** 2]);
