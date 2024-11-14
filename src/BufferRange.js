@@ -21,10 +21,6 @@ export default class BufferRange {
 		return this.#start;
 	}
 
-	get end() {
-		return this.#end;
-	}
-
 	get length() {
 		return this.#end - this.#start;
 	}
